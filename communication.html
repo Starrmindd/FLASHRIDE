@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Font Awesome Icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <title>Communication Preference</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu';
+    }
+
+    section{
+        width: 100vw;
+        padding: 5px 6%;
+    }
+
+    .header{
+        margin: 20px 0px;
+    }
+
+    .header h2{
+        font-size: 22px;
+    }
+
+    .communication-content{
+        color: #000000;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .flashride-content{
+        border: none;
+    }
+    .communication-content p{
+        font-size: 14px;
+    }
+    .communication-content i{
+        font-size: 20px;
+        color: #ADB3BC;
+    }
+</style>
+
+<body>
+    
+    <!-- Section -->
+    <section>
+          <!-- header -->
+        <div class="header">
+            <h2>Communication preferences</h2>
+        </div>
+        <!-- header Ends -->
+        <!-- communication content -->
+        <a href="promotion.html" class="communication-content">
+            <p>Promotion & Tips</p>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="partners.html" class="communication-content">
+            <p>Partner Offers</p>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <a href="product.html" class="communication-content flashride-content">
+            <p>Flashride's Products</p>
+            <i class="fa-solid fa-angle-right"></i>
+        </a>
+        <!-- communication content Ends -->
+    </section>
+    <!-- Section Ends -->
+</body>
+</html>

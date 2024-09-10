@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>Profile</title>
+</head>
+
+<style>
+    :root {
+        --red: #D90429;
+        --light-red: #D10E0E;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu';
+    }
+
+    /* main container */
+    .main-container {
+        width: 100vw;
+        padding: 5px 0;
+    }
+
+    /* main container Ends */
+
+    /* header */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 5%;
+        margin-bottom: 20px;
+    }
+
+    header i {
+        font-size: 14px;
+    }
+
+    header a {
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--red);
+    }
+
+    /* header Ends */
+
+    /* user container */
+    .user-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 0px 0px 5px;
+        margin: 0px 30px 20px;
+    }
+
+    .name-container h3 {
+        font-weight: 700;
+        font-size: 22px;
+        color: #000000;
+    }
+
+    /* user container Ends */
+
+    /* verification container & Location container */
+    .verification-container,
+    .location-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 0 15px;
+    }
+
+    .verification-wrapper,
+    .location-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .verification-wrapper h4,
+    .location-wrapper h4 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .verification-container .verify-button button,
+    .location-container .add-button button {
+        background-color: var(--red);
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .verification-container .verify-button button {
+        padding: 5px 15px;
+        border-radius: 100px;
+    }
+
+    .thick-rule {
+        height: 6px;
+        border: none;
+        background-color: #F1F1F1;
+    }
+
+    /* verification container & Location container Ends */
+
+    /* Location container */
+    .location-head {
+        margin: 15px;
+    }
+
+    .location-head h2 {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .location-container .add-button{
+        padding-right: 15px;
+    }
+
+    .location-container .add-button button {
+        padding: 5px 15px;
+        border-radius: 100px;
+    }
+
+    .light-rule{
+        width: calc(100% - 55px);
+        height: 3px;
+        background-color: #E5E5E5;
+        border: none;
+        margin: 20px auto;
+    }
+
+    /* Location container Ends */
+
+    /* communication container */
+    .communication-container{
+        margin: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .communication-wrapper{
+        color: #000000;
+        font-weight: 400;
+    }
+
+    .communication-wrapper p{
+        font-size: 16px;
+    }
+
+    .communication-wrapper i{
+        font-size: 18px;
+    }
+    
+    /* communication container Ends */
+
+    /* account container */
+    .account-container {
+        margin-top: 40px;
+        padding: 0 15px;
+    }
+
+    .account-container .account-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .account-container .account-wrapper i{
+        color: #000000;
+    }
+
+    .account-container .account-wrapper p {
+        font-weight: 400;
+        font-size: 14px;
+        color: var(--light-red);
+    }
+
+    /* account container Ends */
+</style>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- header -->
+        <header>
+            <i class="fa-solid fa-arrow-left"></i>
+            <a href="">Edit</a>
+        </header>
+        <!-- header Ends -->
+        <!-- user container -->
+        <div class="user-container">
+            <div class="img-container">
+                <img src="user-img.png" alt="user-img">
+            </div>
+            <div class="name-container">
+                <h3>Praise Bamise</h3>
+            </div>
+        </div>
+        <hr class="light-rule">
+        <!-- user container Ends -->
+
+        <!-- verification container -->
+        <div class="verification-container">
+            <div class="verification-wrapper">
+                <i class="fa-solid fa-envelope"></i>
+                <h4>bamise29@gmail.com</h4>
+            </div>
+            <div class="verify-button">
+                <button>VERIFY</button>
+            </div>
+        </div>
+        <div class="verification-container">
+            <div class="verification-wrapper">
+                <i class="fa-solid fa-phone"></i>
+                <h4>+2349023531680</h4>
+            </div>
+            <div class="verify-button">
+                <button>VERIFY</button>
+            </div>
+        </div>
+        <hr class="thick-rule">
+        <!-- verification container Ends -->
+
+        <!-- Location container -->
+        <div class="location-head">
+            <h2>Favorite location</h2>
+        </div>
+        <div class="location-container" id="houseLocation">
+            <div class="location-wrapper">
+                <i class="fa-solid fa-house"></i>
+                <h4>Home</h4>
+            </div>
+            <div class="add-button">
+                <button>ADD</button>
+            </div>
+        </div><hr class="light-rule">
+        <div class="location-container">
+            <div class="location-wrapper">
+                <i class="fa-solid fa-briefcase"></i>
+                <h4>Work</h4>
+            </div>
+            <div class="add-button">
+                <button>ADD</button>
+            </div>
+        </div>
+        <hr class="thick-rule">
+        <!-- Location container Ends -->
+
+        <!-- communication container -->
+        <a href="communication.html" class="communication-container">
+            <div class="communication-wrapper"><p>Communication Preference</p>
+           </div>
+           <div class="communication-wrapper">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+        </a>
+        <hr class="thick-rule">
+        <!-- communication container Ends -->
+
+        <!-- account container -->
+        <div class="account-container">
+            <a href="" class="account-wrapper">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <p>Log out</p>
+            </a>
+            <a href="" class="account-wrapper"> 
+                <i class="fa-solid fa-trash-can"></i>
+                <p>Delete account</p>
+            </a>
+
+
+        </div>
+        <!-- account container Ends -->
+    </div>
+    <!-- Main Container Ends -->
+</body>
+
+</html>

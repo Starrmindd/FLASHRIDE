@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat';
+    }
+
+    /* Main Container */
+    .main-container {
+        position: relative;
+    }
+
+    /* Main Container Ends */
+
+    /* Map Contaier */
+    .map-container iframe {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /* Map Contaier Ends */
+
+    /* Home Container */
+    .home-container {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 30px 15px;
+        width: calc(100% - 30px);
+        position: absolute;
+        top: 80%;
+    }
+
+    /* Home Container Ends */
+
+    /* Small Text Container */
+    .small-text-container {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .small-text-container::before {
+        content: '';
+        display: block;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #D90429;
+        position: absolute;
+        left: -3%;
+        top: 45%;
+    }
+
+    .small-text-container small {
+        font-size: 12px;
+        font-weight: 600;
+        color: #BDBDBD;
+    }
+
+    /* Small Text Container Ends */
+
+    /* Big Text Container */
+    .big-text-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-left: 20px;
+    }
+
+    .big-text-container h3 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .big-text-container i {
+        font-size: 12px;
+        color: #D90429;
+    }
+
+    /* Big Text Container Ends */
+
+    /* Input Container */
+    .input-container input {
+        width: calc(100% - 2px);
+        margin: 5px;
+        padding: 13px  8px;
+        border: none;
+        outline: none;
+        background-color: #F6F6F6;
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+    }
+
+    .input-container input::placeholder {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 500;
+        color: #BDBDBD;
+    }
+
+    .font-awesome {
+        font-family: 'Helvetica', FontAwesome, sans-serif;
+    }
+
+    /* Input Container Ends */
+
+    /* Media Query */
+    @media(max-width:992px) {
+        .map-container iframe {
+            width: 100vw;
+        }
+    }
+
+
+    @media(min-width:768px){
+        .home-container{
+            top: 88%;
+        }
+    }
+
+
+    @media(max-width:420px){
+        .home-container{
+            top: 83%;
+        }
+    }
+</style>
+
+<body>
+    <!-- Main Container Section -->
+    <section class="main-container">
+        <!-- Map Container -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63348.64284471684!2d4.8437655!3d7.092324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10386269d18b3449%3A0x4f347e4670cd572e!2sOndo!5e0!3m2!1sen!2sng!4v1679927991149!5m2!1sen!2sng"
+                style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <!-- Map Container Ends -->
+        <!-- Home Container -->
+        <div class="home-container">
+            <div class="small-text-container">
+                <small>Form</small>
+            </div>
+            <div class="big-text-container">
+                <h3>Home</h3>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <!-- Input Container -->
+            <div class="input-container">
+                <input type="search" placeholder="&#xf002; Where to?" class="font-awesome">
+            </div>
+            <!-- Input Container Ends -->
+        </div>
+        <!-- Home Container -->
+    </section>
+    <!-- Main Container Section Ends -->
+
+</body>
+
+</html>

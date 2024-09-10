@@ -1,0 +1,169 @@
+:root {
+    --red: #6fff0f;
+    --white: #ffffff;
+    --black: #000000;
+    --input-bg: #F6F6F6;
+    --text: #BDBDBD;
+}
+
+* {
+    margin: 3px 0 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+/* Location Input Container */
+.location-input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: calc(100% - 60px);
+    margin: 0 auto;
+    position: relative;
+}
+
+.location-input-container::before {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    background-color: var(--red);
+    position: absolute;
+    left: -4.5%;
+    bottom: 78%;
+}
+
+.location-input-container::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    background-color: var(--red);
+    position: absolute;
+    left: -5%;
+    bottom: 14%;
+}
+
+.location-input-container input {
+    padding: 8px;
+    background-color: var(--input-bg);
+    border: 1px solid #741e1e;
+    border-radius: 8px;
+    outline: none;
+}
+
+.location-input-container .current-location-input::-webkit-input-placeholder {
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .current-location-input::-moz-placeholder {
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .current-location-input:-ms-input-placeholder {
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .current-location-input::-ms-input-placeholder {
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .current-location-input::placeholder {
+    color: var(--red);
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .where-to-input::-webkit-input-placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .where-to-input::-moz-placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .where-to-input:-ms-input-placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .where-to-input::-ms-input-placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.location-input-container .where-to-input::placeholder {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Location Input Container Ends */
+
+/* Map Contaier */
+.map-container iframe {
+    width: 100%;
+    height: 78vh;
+}
+
+/* Map Contaier Ends */
+
+/* Button Container */
+.button-container {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.button-container button {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+    padding: 8px;
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    border-radius: 100px;
+}
+
+/* Button Container Ends*/
+
+
+/* Media Query */
+@media(max-width:992px) {
+    .map-container iframe {
+        width: 100vw;
+    }
+}

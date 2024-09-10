@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Google Fonts -->
+   <link
+   href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
+   rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="rating.css">
+    <title>Rate</title>
+</head>
+
+<style>
+    :root {
+        --red-color: #fa0707d8;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Ubuntu';
+        background-color: var(--red-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align:center;
+        margin-top: 100px;
+    }
+
+    .rate-container {
+        background-color: white;
+        width: 600px;
+        padding: 40px 5px;
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .star-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .star-container i{
+        color: #FFB84E;
+    }
+
+    .rate-header {
+        margin: 15px 0;
+    }
+
+    .rate-header h2 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .rate-paragraph {
+        margin: 25px;
+    }
+
+    .rate-paragraph p {
+        font-size: 20px;
+        font-weight: 400px;
+        color: #4B4A4A;
+        line-height: 25px;
+    }
+
+    .rate-button {
+        margin: 15px;
+    }
+
+    .rate-button button {
+        width: 60%;
+        padding: 10px;
+        border: none;
+        background-color: var(--red-color);
+        color: white;
+        font-size: 20px;
+        border-radius: 19px;
+        -webkit-border-radius: 19px;
+        -moz-border-radius: 19px;
+        -ms-border-radius: 19px;
+        -o-border-radius: 19px;
+    }
+
+    .rate-share-container a {
+        font-size: 20px;
+        font-weight: 600;
+        color: var(--red-color);
+    }
+
+
+
+    /********************************************************* 
+                        Media Query 
+**********************************************************/
+    @media (max-width:560px) {
+        .rate-container {
+            width: 300px;
+        }
+
+        .rate-header h2 {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .rate-paragraph p {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Rate Container -->
+    <div class="rate-container">
+        <!-- star container -->
+        <div class="star-container">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <!-- star container Ends-->
+        <!-- rate header -->
+        <div class="rate-header">
+            <h2>Rate our app</h2>
+        </div>
+        <!-- rate header Ends-->
+        <!-- rate paragraph -->
+        <div class="rate-paragraph">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, quas eius? Eligendi culpa molestias
+                quod iusto vel molestiae, quidem necessitatibus similique illo totam. At, dolore illum ratione modi
+                aspernatur sequi laboriosam sed perspiciatis natus nesciunt?</p>
+        </div>
+        <!-- rate paragraph Ends-->
+        <!-- rate button -->
+        <div class="rate-button">
+            <button>I love it!</button>
+        </div>
+        <!-- rate button Ends-->
+        <!-- rate share -->
+        <div class="rate-share-container">
+            <a href="#">Share with your friends!</a>
+        </div>
+        <!-- rate share Ends-->
+    </div>
+    <!-- Rate Container -->
+</body>
+
+</html>

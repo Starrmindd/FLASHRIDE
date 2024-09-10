@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="location.css">
+    <title>Map</title>
+</head>
+
+<style>
+    :root {
+        --red: #D90429;
+        --white: #ffffff;
+        --black: #000000;
+        --input-bg: #F6F6F6;
+        --text: #BDBDBD;
+    }
+
+    * {
+        margin: 3px 0 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Location Input Container */
+    .location-input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: calc(100% - 60px);
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .location-input-container::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border: 1px solid var(--black);
+        border-radius: 50%;
+        background-color: var(--red);
+        position: absolute;
+        left: -4.5%;
+        bottom: 78%;
+    }
+
+    .location-input-container::after {
+        content: '';
+        display: block;
+        width: 8px;
+        height: 8px;
+        border: 1px solid var(--black);
+        border-radius: 50%;
+        background-color: var(--red);
+        position: absolute;
+        left: -5%;
+        bottom: 14%;
+    }
+
+    .location-input-container input {
+        padding: 8px;
+        background-color: var(--input-bg);
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+        outline: none;
+    }
+
+    .location-input-container .current-location-input::placeholder {
+        color: var(--red);
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .location-input-container .where-to-input::placeholder {
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    /* Location Input Container Ends */
+
+    /* Map Contaier */
+    .map-container iframe {
+        width: 100%;
+        height: 78vh;
+    }
+
+    /* Map Contaier Ends */
+
+    /* Button Container */
+    .button-container {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .button-container button {
+        width: calc(100% - 60px);
+        margin: 0 auto;
+        padding: 8px;
+        background-color: var(--red);
+        color: var(--white);
+        border: none;
+        border-radius: 100px;
+    }
+
+    /* Button Container Ends*/
+
+
+    /* Media Query */
+    @media(max-width:992px) {
+        .map-container iframe {
+            width: 100vw;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Main Container Section -->
+    <section class="main-container">
+        <!-- Location Input Container -->
+        <div class="location-input-container">
+            <input type="search" placeholder="Current Location" class="current-location-input">
+            <input type="search" placeholder="Where to?" class="where-to-input">
+        </div>
+        <!-- Location Input Container Ends -->
+        <!-- Map Container -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63348.64284471684!2d4.8437655!3d7.092324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10386269d18b3449%3A0x4f347e4670cd572e!2sOndo!5e0!3m2!1sen!2sng!4v1679927991149!5m2!1sen!2sng"
+                style="border:0;" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <!-- Map Container Ends -->
+        <!-- Button Container -->
+        <div class="button-container">
+            <button>Done</button>
+        </div>
+        <!-- Button Container Ends -->
+    </section>
+    <!-- Main Container Section Ends -->
+</body>
+
+</html>

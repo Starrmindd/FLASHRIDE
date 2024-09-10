@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
+    rel="stylesheet">
+    <title>Partner Offers</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu';
+    }
+
+    section {
+        width: 100vw;
+        padding: 5px 6%;
+    }
+
+    .header {
+        margin: 20px 0px;
+    }
+
+    .header h2 {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .header p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .partner-content {
+        color: #000000;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #E5E5E5;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+    .push-content {
+        border: none;
+    }
+
+    .partner-content p {
+        font-size: 14px;
+    }
+
+    .partner-content i {
+        font-size: 20px;
+        color: #ADB3BC;
+    }
+
+    /* Switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 14px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 0;
+        bottom: -1.5px;
+        background-color: #D90429;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: rgba(217, 4, 41, 0.6);
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round:before {
+        border-radius: 50%;
+    }
+
+    /* Switch Ends */
+</style>
+
+<body>
+    
+    <!-- Section -->
+    <section>
+        <!-- header -->
+        <div class="header">
+            <h2>Partner Offers</h2>
+            <p>Don't miss out an offers from Flashride's trusted partners.</p>
+        </div>
+        <!-- header Ends -->
+        <!-- partner content -->
+        <div class="partner-content">
+            <p>SMS</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="partner-content">
+            <p>Email</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div class="partner-content push-content">
+            <p>Push</p>
+            <label class="switch">
+                <input type="checkbox" checked>
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <!-- partner content Ends -->
+    </section>
+    <!-- Section Ends -->
+</body>
+</html>

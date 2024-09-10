@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <title>My Ride</title>
+</head>
+
+<style>
+    :root {
+        --red: #D90429;
+        --line-color: #D6D6D6;
+        --text-color: #67696d;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu';
+    }
+
+    section {
+        width: 100vw;
+        padding: 10px 3%;
+    }
+
+    section h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 5px 0px 20px;
+    }
+
+    .ride-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ride-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .ride-date{
+        margin: 35px 0px;
+    }
+
+    .ride-date h3{
+        font-size: 16px;
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .ride-img-container {
+        background-color: var(--red);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        line-height: 63px;
+    }
+
+    .ride-img-container img {
+        margin-left: 5px;
+    }
+
+    .ride-text-container h3{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .ride-text-container h3 small{
+        font-size: 12px;
+        font-weight: 300;
+        color: var(--text-color);
+    }
+
+    .ride-price h3{
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .light-rule{
+        margin: 20px 0;
+        height: 3px;
+        background-color: var(--line-color);
+        border: none;
+    }
+</style>
+
+<body>
+
+    <!-- Section -->
+    <section>
+        <h2>My Rides</h2>
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-date">
+                <h3>Feb 2023</h3>
+            </div>
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Akure <br><small>14 Feb, 2:00PM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 4,000</h3>
+                </div>
+            </div>
+        </div>
+        <hr class="light-rule">
+        <!-- ride wrapper Ends -->
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Ore <br><small>26 Feb, 10:00AM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 2,500</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ride wrapper Ends -->
+
+
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-date">
+                <h3>March 2023</h3>
+            </div>
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Town Hall <br><small>5 March, 4:30PM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 4,000</h3>
+                </div>
+            </div>
+        </div>
+        <hr class="light-rule">
+        <!-- ride wrapper Ends -->
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Balablu City <br><small>15 March, 8:00AM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 2,500</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ride wrapper Ends -->
+
+
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-date">
+                <h3>April 2023</h3>
+            </div>
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Igodan - Lisa <br><small>1 April, 1:25PM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 4,000</h3>
+                </div>
+            </div>
+        </div>
+        <hr class="light-rule">
+        <!-- ride wrapper Ends -->
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Ore <br><small>20 Feb, 10:00AM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 2,500</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ride wrapper Ends -->
+
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-date">
+                <h3>Feb 2023</h3>
+            </div>
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Akure <br><small>20 Feb, 2:00PM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 4,000</h3>
+                </div>
+            </div>
+        </div>
+        <hr class="light-rule">
+        <!-- ride wrapper Ends -->
+        <!-- ride wrapper -->
+        <div class="ride-main-wrapper">
+            <div class="ride-container">
+                <div class="ride-wrapper">
+                    <div class="ride-img-container">
+                        <img src="flashride-car.png" alt="car">
+                    </div>
+                    <div class="ride-text-container">
+                        <h3>Ore <br><small>20 Feb, 10:00AM</small></h3>
+                    </div>
+                </div>
+                <div class="ride-price">
+                    <h3>₦ 2,500</h3>
+                </div>
+            </div>
+        </div>
+        <!-- ride wrapper Ends -->
+    </section>
+    <!-- Section Ends -->
+</body>
+
+</html>

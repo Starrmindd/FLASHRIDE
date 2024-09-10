@@ -1,0 +1,113 @@
+
+:root {
+    --red-color: #db2d4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.rate-container {
+    background-color: white;
+    width: 600px;
+    padding: 40px 5px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.star-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.star-container i{
+    color: #FFB84E;
+}
+
+.rate-header {
+    margin: 15px 0;
+}
+
+.rate-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.rate-paragraph {
+    margin: 25px;
+}
+
+.rate-paragraph p {
+    font-size: 20px;
+    font-weight: 400px;
+    color: #4B4A4A;
+    line-height: 25px;
+}
+
+.rate-button {
+    margin: 15px;
+}
+
+.rate-button button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background-color: var(--red-color);
+    color: white;
+    font-size: 20px;
+    border-radius: 19px;
+    -webkit-border-radius: 19px;
+    -moz-border-radius: 19px;
+    -ms-border-radius: 19px;
+    -o-border-radius: 19px;
+}
+
+.rate-share-container a {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--red-color);
+}
+
+
+
+/********************************************************* 
+                    Media Query 
+**********************************************************/
+@media (max-width:560px) {
+    .rate-container {
+        width: 300px;
+    }
+
+    .rate-header h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .rate-paragraph p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
